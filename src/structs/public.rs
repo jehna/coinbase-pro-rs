@@ -32,14 +32,6 @@ pub struct Product {
     pub base_increment: f64,
     #[serde(deserialize_with = "f64_from_string")]
     pub quote_increment: f64,
-    #[serde(deserialize_with = "f64_from_string")]
-    pub base_min_size: f64,
-    #[serde(deserialize_with = "f64_from_string")]
-    pub base_max_size: f64,
-    #[serde(deserialize_with = "f64_from_string")]
-    pub min_market_funds: f64,
-    #[serde(deserialize_with = "f64_from_string")]
-    pub max_market_funds: f64,
     pub status: String,
     pub status_message: String,
     pub cancel_only: bool,
